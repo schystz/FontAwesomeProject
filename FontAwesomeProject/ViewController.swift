@@ -7,19 +7,18 @@
 //
 
 import UIKit
+import FontAwesome_swift
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        label.font = UIFont.fontAwesome(ofSize: 100)
+        label.text = String.fontAwesomeIcon(name: .github)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
